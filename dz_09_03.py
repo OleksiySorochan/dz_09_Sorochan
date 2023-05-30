@@ -27,3 +27,26 @@ pal = Paralilogram(25, 6)
 print(pal.get_area())
 sq = Square(5,5)
 print(sq.get_area())
+
+#Варіант 2 як що length - це сторона, а width - це висота
+
+class Paralilogram2:
+    def __init__(self, width, length):
+        self.width = width
+        self.length = length
+
+    def get_area(self):
+        w = self.width
+        l = self.length
+        return l * w
+
+class Square2(Paralilogram2):
+    def __init__(self, a):
+        self.a = a
+    def get_area(self):
+        return self.a ** 2
+
+pal2 = Paralilogram2(12, 34)
+print(pal2.get_area())
+sq2 = Square2(5)
+print(sq2.get_area())
