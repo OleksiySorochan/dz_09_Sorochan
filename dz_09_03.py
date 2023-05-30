@@ -43,8 +43,10 @@ class Paralilogram2:
 class Square2(Paralilogram2):
     def __init__(self, a):
         self.a = a
+
     def get_area(self):
         return self.a ** 2
+
 
 pal2 = Paralilogram2(12, 34)
 print(pal2.get_area())
